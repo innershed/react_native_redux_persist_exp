@@ -27,7 +27,6 @@ const ExpoFileSystemStorage = {
 
   getItem: async (key, callback) => {
     const info = await FileSystem.getInfoAsync(options.path);
-    debugger;
     if (info.exists === false)
       await FileSystem.makeDirectoryAsync(options.path, {intermediates: true});
     return FileSystem.readAsStringAsync(pathForKey(key))
