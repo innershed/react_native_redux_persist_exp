@@ -1,11 +1,11 @@
 {
   "name": "redux-persist-expo-filesystem-storage",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Redux persist adapter using Expo's FileSystem as storage",
   "main": "index.js",
   "author": "JeffBobbo",
   "license": "MIT",
-  "dependencies": {
-    "expo": "^31.0.2"
+  "peerDependencies": {
+    "expo": ">=31"
   }
 }
