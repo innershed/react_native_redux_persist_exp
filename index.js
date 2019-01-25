@@ -1,7 +1,7 @@
 import {FileSystem} from 'expo';
 
 let options = {
-  path: `${FileSystem.documentDirectory}/store`,
+  path: `${FileSystem.documentDirectory}`,
   encoding: FileSystem.EncodingTypes.UTF8,
   toFileName: (name) => name.split(':').join('-'),
   fromFileName: (name) => name.split('-').join(':')
