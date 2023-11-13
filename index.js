@@ -2,7 +2,6 @@ import * as FileSystem from "expo-file-system";
 
 let options = {
   path: `${FileSystem.documentDirectory}`,
-  encoding: FileSystem.EncodingTypes.UTF8,
   toFileName: (name) => name.split(":").join("-"),
   fromFileName: (name) => name.split("-").join(":"),
 };
